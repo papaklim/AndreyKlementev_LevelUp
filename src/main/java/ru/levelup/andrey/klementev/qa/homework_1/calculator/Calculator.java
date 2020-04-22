@@ -65,6 +65,7 @@ public class Calculator {
                     System.out.println("Result of the fibonacci: " + fibResult);
                     break;
                 case EXIT:
+                    values.closeInput();
                     return;
                 case UNKNOWN:
                     System.out.println("Incorrect input. Try again.");

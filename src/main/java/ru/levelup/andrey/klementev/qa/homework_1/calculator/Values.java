@@ -15,6 +15,10 @@ public class Values {
         return input.readLine();
     }
 
+    public void closeInput() throws IOException {
+        input.close();
+    }
+
     double getDoubleValue(String output) throws IOException {
         System.out.print(output);
         while (true) {
