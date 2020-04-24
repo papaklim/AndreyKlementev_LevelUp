@@ -34,7 +34,7 @@ public class Calculator {
         while (true) {
             System.out.print("Input operation type, like SUM, SUB, MUL, POW, FAC, FIB or EXIT: ");
             String actionValue = values.getAction();
-            ActionType action = getAction(actionValue);
+            ActionType action = ActionType.getAction(actionValue);
             switch (action) {
                 case SUM:
                     double sumResult = summator.summation(values.getDoubleValue(FIRST_VALUE),
@@ -72,15 +72,4 @@ public class Calculator {
             }
         }
     }
-
-    private ActionType getAction(String actionValue) {
-        if (actionValue.equalsIgnoreCase("sum") || actionValue.equalsIgnoreCase("sub") ||
-                actionValue.equalsIgnoreCase("mul") || actionValue.equalsIgnoreCase("pow") ||
-                actionValue.equalsIgnoreCase("fac") || actionValue.equalsIgnoreCase("fib") ||
-                actionValue.equalsIgnoreCase("exit")) {
-            return ActionType.valueOf(actionValue.toUpperCase());
-        }
-        return ActionType.UNKNOWN;
-    }
-
 }

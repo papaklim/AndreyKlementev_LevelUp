@@ -19,7 +19,7 @@ public class Values {
         input.close();
     }
 
-    double getDoubleValue(String output) throws IOException {
+    public double getDoubleValue(String output) throws IOException {
         System.out.print(output);
         while (true) {
             try {
