@@ -1,4 +1,4 @@
-package ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.product_types;
+package ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.ProductTypes;
 
 import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.BaseProduct;
 

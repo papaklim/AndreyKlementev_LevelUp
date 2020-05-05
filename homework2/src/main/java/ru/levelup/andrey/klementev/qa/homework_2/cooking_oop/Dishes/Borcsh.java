@@ -1,10 +1,10 @@
-package ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.dishes;
+package ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.Dishes;
 
 import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.BaseProduct;
 import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.Dish;
-import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.product_types.Meat;
-import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.product_types.Sauce;
-import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.product_types.Vegetable;
+import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.ProductTypes.Meat;
+import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.ProductTypes.Sauce;
+import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.ProductTypes.Vegetable;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -52,7 +52,7 @@ public class Borcsh extends Dish {
 
     @Override
     public BaseProduct findByName(String name) {
-        for (BaseProduct ingredient : borschIngredients) {
+       for (BaseProduct ingredient : borschIngredients) {
             if (ingredient.getName().equals(name)) {
                 return ingredient;
             }

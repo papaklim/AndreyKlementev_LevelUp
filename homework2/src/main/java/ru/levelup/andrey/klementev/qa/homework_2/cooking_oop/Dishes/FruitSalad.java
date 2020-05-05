@@ -1,8 +1,8 @@
-package ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.dishes;
+package ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.Dishes;
 
 import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.BaseProduct;
 import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.Dish;
-import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.product_types.Fruit;
+import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.ProductTypes.Fruit;
 
 import java.util.ArrayList;
 import java.util.Arrays;

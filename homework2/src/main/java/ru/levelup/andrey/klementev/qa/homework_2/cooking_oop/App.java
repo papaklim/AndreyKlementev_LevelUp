@@ -1,11 +1,11 @@
 package ru.levelup.andrey.klementev.qa.homework_2.cooking_oop;
 
-import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.dishes.Borcsh;
-import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.dishes.FruitSalad;
-import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.product_types.Fruit;
-import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.product_types.Meat;
-import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.product_types.Sauce;
-import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.product_types.Vegetable;
+import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.Dishes.Borcsh;
+import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.Dishes.FruitSalad;
+import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.ProductTypes.Fruit;
+import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.ProductTypes.Meat;
+import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.ProductTypes.Sauce;
+import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.ProductTypes.Vegetable;
 
 import java.text.DecimalFormat;
 

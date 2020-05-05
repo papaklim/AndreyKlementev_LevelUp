@@ -1,11 +1,9 @@
 package ru.levelup.andrey.klementev.qa.homework_2.cooking_oop;
 
-import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.product_types.Fruit;
-import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.product_types.Meat;
-import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.product_types.Sauce;
-import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.product_types.Vegetable;
-
-import java.text.DecimalFormat;
+import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.ProductTypes.Fruit;
+import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.ProductTypes.Meat;
+import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.ProductTypes.Sauce;
+import ru.levelup.andrey.klementev.qa.homework_2.cooking_oop.ProductTypes.Vegetable;
 
 public class Fridge {
 
