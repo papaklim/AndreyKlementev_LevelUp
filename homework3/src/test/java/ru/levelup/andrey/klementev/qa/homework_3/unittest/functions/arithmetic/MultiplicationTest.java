@@ -1,4 +1,4 @@
-package ru.levelup.andrey.klementev.qa.homework_3.unittest.arithmetic_functions;
+package ru.levelup.andrey.klementev.qa.homework_3.unittest.functions.arithmetic;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -21,6 +21,6 @@ public class MultiplicationTest extends BaseTest {
     @ParameterizedTest(name = "{0} * {1} = {2}")
     @MethodSource("ru.levelup.andrey.klementev.qa.homework_3.unittest.DataProvider#multDoubleData")
     void multDouble(double first, double second, double expectedResult) {
-        assertEquals(expectedResult, calculator.mult(first, second), 0.001);
+        assertEquals(expectedResult, calculator.mult(first, second), DELTA);
     }
 }

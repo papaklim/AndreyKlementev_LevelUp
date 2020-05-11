@@ -1,4 +1,4 @@
-package ru.levelup.andrey.klementev.qa.homework_3.unittest.arithmetic_functions;
+package ru.levelup.andrey.klementev.qa.homework_3.unittest.functions.arithmetic;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

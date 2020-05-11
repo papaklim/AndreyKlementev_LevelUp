@@ -7,8 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(JUnitPlatform.class)
 @SuiteDisplayName("Test Suite: Trigonometric Functions")
-@SelectPackages("ru.levelup.andrey.klementev.qa.homework_3.unittest.trigonometric_functions ")
-
-public class TrigonometricFunctionsSuite {
+@SelectPackages("ru.levelup.andrey.klementev.qa.homework_3.unittest.functions.trigonometric")
+public class TrigonometricFunctionsSuiteTest {
 
 }

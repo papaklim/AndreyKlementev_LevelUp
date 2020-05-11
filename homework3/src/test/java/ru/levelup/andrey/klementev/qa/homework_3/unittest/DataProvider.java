@@ -131,7 +131,7 @@ public class DataProvider {
         );
     }
 
-    public static Stream<Arguments> PositiveLongData() {
+    public static Stream<Arguments> positiveLongData() {
         return Stream.of(
                 Arguments.of(0, false),
                 Arguments.of(1, true),
@@ -139,7 +139,7 @@ public class DataProvider {
         );
     }
 
-    public static Stream<Arguments> NegativeLongData() {
+    public static Stream<Arguments> negativeLongData() {
         return Stream.of(
                 Arguments.of(0, false),
                 Arguments.of(1, false),

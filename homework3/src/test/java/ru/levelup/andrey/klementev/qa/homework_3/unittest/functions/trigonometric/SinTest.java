@@ -1,4 +1,4 @@
-package ru.levelup.andrey.klementev.qa.homework_3.unittest.trigonometric_functions;
+package ru.levelup.andrey.klementev.qa.homework_3.unittest.functions.trigonometric;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -14,6 +14,6 @@ public class SinTest extends BaseTest {
     @ParameterizedTest(name = "sin({0}) = {1}")
     @MethodSource("ru.levelup.andrey.klementev.qa.homework_3.unittest.DataProvider#sinDoubleData")
     void sinDouble(double first, double expectedResult) {
-        assertEquals(expectedResult, calculator.sin(first), 0.001);
+        assertEquals(expectedResult, calculator.sin(first), DELTA);
     }
 }

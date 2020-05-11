@@ -1,4 +1,4 @@
-package ru.levelup.andrey.klementev.qa.homework_3.unittest.trigonometric_functions;
+package ru.levelup.andrey.klementev.qa.homework_3.unittest.functions.trigonometric;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -14,6 +14,6 @@ public class CtgTest extends BaseTest {
     @ParameterizedTest(name = "ctg({0}) = {1}")
     @MethodSource("ru.levelup.andrey.klementev.qa.homework_3.unittest.DataProvider#ctgDoubleData")
     void ctgDouble(double first, double expectedResult) {
-        assertEquals(expectedResult, calculator.ctg(first), 0.001);
+        assertEquals(expectedResult, calculator.ctg(first), DELTA);
     }
 }

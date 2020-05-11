@@ -1,4 +1,4 @@
-package ru.levelup.andrey.klementev.qa.homework_3.unittest.arithmetic_functions;
+package ru.levelup.andrey.klementev.qa.homework_3.unittest.functions.arithmetic;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -12,14 +12,14 @@ public class CheckSignNumberTest extends BaseTest {
 
     @DisplayName("[Operation: isPositive. Type: long]")
     @ParameterizedTest(name = " {0} = {1}")
-    @MethodSource("ru.levelup.andrey.klementev.qa.homework_3.unittest.DataProvider#PositiveLongData")
+    @MethodSource("ru.levelup.andrey.klementev.qa.homework_3.unittest.DataProvider#positiveLongData")
     void isPositiveLong(long first, boolean expectedResult) {
         assertEquals(expectedResult, calculator.isPositive(first));
     }
 
     @DisplayName("[Operation: isNegative. Type: long]")
     @ParameterizedTest(name = " {0} = {1}")
-    @MethodSource("ru.levelup.andrey.klementev.qa.homework_3.unittest.DataProvider#NegativeLongData")
+    @MethodSource("ru.levelup.andrey.klementev.qa.homework_3.unittest.DataProvider#negativeLongData")
     void isNegativeLong(long first, boolean expectedResult) {
         assertEquals(expectedResult, calculator.isNegative(first));
     }

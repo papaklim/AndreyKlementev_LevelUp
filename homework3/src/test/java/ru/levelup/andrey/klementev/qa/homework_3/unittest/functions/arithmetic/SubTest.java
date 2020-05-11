@@ -1,4 +1,4 @@
-package ru.levelup.andrey.klementev.qa.homework_3.unittest.arithmetic_functions;
+package ru.levelup.andrey.klementev.qa.homework_3.unittest.functions.arithmetic;
 
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -14,13 +14,13 @@ public class SubTest extends BaseTest {
     @ParameterizedTest(name = "{0} - {1} = {2}")
     @MethodSource("ru.levelup.andrey.klementev.qa.homework_3.unittest.DataProvider#subLongData")
     void subLong(long first, long second, long expectedResult) {
-        assertEquals(expectedResult, calculator.sub(first, second), 0.001);
+        assertEquals(expectedResult, calculator.sub(first, second), DELTA);
     }
 
     @DisplayName("[Operation: Subtraction. Type: double]")
     @ParameterizedTest(name = "{0} - {1} = {2}")
     @MethodSource("ru.levelup.andrey.klementev.qa.homework_3.unittest.DataProvider#subDoubleData")
     void subDouble(double first, double second, double expectedResult) {
-        assertEquals(expectedResult, calculator.sub(first, second), 0.001);
+        assertEquals(expectedResult, calculator.sub(first, second), DELTA);
     }
 }
