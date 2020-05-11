@@ -6,7 +6,7 @@ import org.junit.jupiter.api.BeforeAll;
 
 public abstract class BaseTest {
 
-    public double DELTA = 0.001;
+    protected static final double DELTA = 0.001;
 
     public static Calculator calculator;
 
