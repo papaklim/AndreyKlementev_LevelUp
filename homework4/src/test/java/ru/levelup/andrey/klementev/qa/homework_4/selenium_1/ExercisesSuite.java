@@ -1,4 +1,4 @@
-package ru.levelup.andrey.klementev.qa.homework_4.selenium;
+package ru.levelup.andrey.klementev.qa.homework_4.selenium_1;
 
 import org.junit.platform.runner.JUnitPlatform;
 import org.junit.platform.suite.api.SelectPackages;

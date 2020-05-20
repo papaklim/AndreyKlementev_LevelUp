@@ -1,11 +1,11 @@
-package ru.levelup.andrey.klementev.qa.homework_4.selenium.exercises;
+package ru.levelup.andrey.klementev.qa.homework_4.selenium_1.exercises;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import ru.levelup.andrey.klementev.qa.homework_4.selenium.BaseTest;
+import ru.levelup.andrey.klementev.qa.homework_4.selenium_1.BaseTest;
 
 import java.util.List;
 

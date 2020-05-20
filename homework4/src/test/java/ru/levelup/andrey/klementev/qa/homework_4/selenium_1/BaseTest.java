@@ -1,4 +1,4 @@
-package ru.levelup.andrey.klementev.qa.homework_4.selenium;
+package ru.levelup.andrey.klementev.qa.homework_4.selenium_1;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
