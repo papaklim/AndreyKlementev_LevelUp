@@ -12,23 +12,28 @@ import ru.levelup.andrey.klementev.qa.homework_5.selenium_2.pages.MailPage;
 import java.util.Date;
 
 public abstract class BasePageObjectTest {
-    public final String BASE_URL = "https://mail.ru/";
-    public final String MAIL_LOGIN = "jeffrythompson1589621232102";
-    public final String MAIL_DOMAIN = "@inbox.ru";
-    public final String MAIL_PASSWORD = "XG3XZ1iyp";
-    public final String MAIL_SELF_ADDRESS = "jeffrythompson1589621232102@inbox.ru";
-    public final String MAIL_DESTINATION_ADDRESS = "mickeystamm1589731387267@inbox.ru"; //password: x784vTqV
-    public final String MAIL_SUBJECT_WITHOUT_TEST = "Mail from selenium";
-    public final String MAIL_SUBJECT_WITH_TEST = "Test mail from selenium";
-    public final String MAIL_BODY_TEXT = "TEST: " + new Date().getTime();
-    public WebDriver driver;
-    public static LoginPage loginPage;
-    public static AccountPage accountPage;
-    public static MailPage mailPage;
+    protected static final String BASE_URL = "https://mail.ru/";
+    protected static final String WRITE_MAIL = "Написать письмо";
+    protected static final String MAIL_LOGIN = "jeffrythompson1589621232102";
+    protected static final String MAIL_DOMAIN = "@inbox.ru";
+    protected static final String MAIL_PASSWORD = "XG3XZ1iyp";
+    protected static final String MAIL_SELF_ADDRESS = "jeffrythompson1589621232102@inbox.ru";
+    protected static final String MAIL_DESTINATION_ADDRESS = "mickeystamm1589731387267@inbox.ru"; //password: x784vTqV
+    protected static final String MAIL_SUBJECT_WITHOUT_TEST = "Mail from selenium";
+    protected static final String MAIL_SUBJECT_WITH_TEST = "Test mail from selenium";
+    protected static final String MAIL_BODY_TEXT = "TEST: " + new Date().getTime();
+    protected static final String ASSERT_EQL_TEXT = "Verifying that mail is in the current folder failed: mail's body " +
+            "text doesn't match with mail's body text from first mail in the list";
+    protected static final String ASSERT_NOT_EQL_TEXT = "Verifying that mail isn't in the current folder failed: mail's" +
+            " body text match with mail's body text from first mail in the list";
+    protected WebDriver driver;
+    protected LoginPage loginPage;
+    protected AccountPage accountPage;
+    protected MailPage mailPage;
 
 
     @BeforeEach
-    public void setUp(){
+    public void setUp() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
@@ -39,7 +44,7 @@ public abstract class BasePageObjectTest {
     }
 
     @AfterEach
-    public void tearDown(){
+    public void tearDown() {
         driver.close();
     }
 }

@@ -12,21 +12,27 @@ public class MailPage extends BasePage{
     }
 
     @FindBy(css = "[data-type='to'] input")
+    @SuppressWarnings("unused")
     private WebElement mailDestinationAddressField;
 
     @FindBy(css = "input[name='Subject']")
+    @SuppressWarnings("unused")
     private WebElement mailSubject;
 
     @FindBy(css = "[role='textbox']")
+    @SuppressWarnings("unused")
     private WebElement mailBody;
 
     @FindBy(css = "[title='Закрыть']")
+    @SuppressWarnings("unused")
     private WebElement closeButton;
 
     @FindBy(css = "[title='Отправить']")
+    @SuppressWarnings("unused")
     private WebElement sendButton;
 
     @FindBy(css = "[title='Сохранить']")
+    @SuppressWarnings("unused")
     private WebElement saveButton;
 
     public void inputMailDestination(String address){
