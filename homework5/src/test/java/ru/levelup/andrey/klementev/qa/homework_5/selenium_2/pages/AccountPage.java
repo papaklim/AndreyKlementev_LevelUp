@@ -22,7 +22,7 @@ public class AccountPage extends BasePage {
     @SuppressWarnings("unused")
     private List<WebElement> mailBodiesList;
 
-    @FindBy(css = ".letter__body [class*=class] div")
+    @FindBy(css = ".letter__body [class*=cl] div")
     @SuppressWarnings("unused")
     private WebElement mailBodyText;
 
