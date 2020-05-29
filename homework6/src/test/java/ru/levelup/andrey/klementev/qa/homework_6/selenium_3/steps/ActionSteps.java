@@ -3,8 +3,6 @@ package ru.levelup.andrey.klementev.qa.homework_6.selenium_3.steps;
 import io.qameta.allure.Step;
 import org.openqa.selenium.WebDriver;
 
-import static ru.levelup.andrey.klementev.qa.homework_6.selenium_3.exercises.BaseStepsTest.BASE_URL;
-
 public class ActionSteps extends BaseSteps {
 
 
@@ -12,12 +10,12 @@ public class ActionSteps extends BaseSteps {
         super(driver);
     }
 
-    @Step("Login to the page: https://mail.ru/")
-    public void loginToPage() {
-        loginPage.inputLogin(MAIL_LOGIN);
-        loginPage.selectDomain(MAIL_DOMAIN);
+    @Step("Log in to the mail account")
+    public void loginToPage(String mailLogin, String mailDomain, String mailPassword) {
+        loginPage.inputLogin(mailLogin);
+        loginPage.selectDomain(mailDomain);
         loginPage.pressSubmitButton();
-        loginPage.inputPassword(MAIL_PASSWORD);
+        loginPage.inputPassword(mailPassword);
         loginPage.pressSubmitButton();
     }
 
@@ -26,15 +24,47 @@ public class ActionSteps extends BaseSteps {
         accountPage.pressWriteMailButton();
     }
 
-    @Step("Fill the mail fields: Address,Subject, Body")
-    public void fillMailFields() {
-        mailPage.inputMailDestination(MAIL_DESTINATION_ADDRESS);
-        mailPage.inputMailSubject(MAIL_SUBJECT_WITHOUT_TEST);
-        mailPage.inputMailBody(MAIL_BODY_TEXT);
+    @Step("Fill the mail fields: address, subject, body")
+    public void fillMailFields(String address, String subject, String body) {
+        mailPage.inputMailDestination(address);
+        mailPage.inputMailSubject(subject);
+        mailPage.inputMailBody(body);
     }
 
     @Step("Press the button: \"Save\"")
     public void pressSaveButton() {
         mailPage.pressSaveButton();
     }
+
+    @Step("Press the button: \"Close\"")
+    public void pressCloseButton() {
+        mailPage.pressCloseButton();
+    }
+
+    @Step("Press the button: \"Send\"")
+    public void pressSendButton() {
+        mailPage.pressSendButton();
+    }
+
+    @Step("Press the button: \"Delete\"")
+    public void pressDeleteButton() {
+        accountPage.pressDeleteButton();
+    }
+
+    @Step("Open left bar navigation menu")
+    public void openLeftBarNavigationFolder(String name) {
+        accountPage.openLeftBarNavigationFolder(name);
+    }
+
+    @Step("Open first mail in the list")
+    public void openFirstMailWindowInTheList() {
+        accountPage.openMailWindowByListIndex(0);
+    }
+
+    @Step("Log out from the mail account")
+    public void logout() {
+        accountPage.userLogout();
+    }
+
+
 }
