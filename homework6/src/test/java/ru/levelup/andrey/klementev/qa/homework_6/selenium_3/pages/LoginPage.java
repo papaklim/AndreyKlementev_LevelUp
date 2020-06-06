@@ -13,23 +13,15 @@ public class LoginPage extends BasePage {
     }
 
     @FindBy(css = "#mailbox [name='login']")
-    @SuppressWarnings("unused")
     private WebElement loginField;
 
     @FindBy(css = "#mailbox [name='domain']")
-    @SuppressWarnings("unused")
     private WebElement domainName;
 
-    @FindBy(css = "#mailbox [type='submit']")
-    @SuppressWarnings("unused")
-    private WebElement passwordButton;
-
     @FindBy(css = "#mailbox [placeholder='Пароль']")
-    @SuppressWarnings("unused")
     private WebElement passwordField;
 
     @FindBy(css = "#mailbox [type='submit']")
-    @SuppressWarnings("unused")
     private WebElement submitButton;
 
 

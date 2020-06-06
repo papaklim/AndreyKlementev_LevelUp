@@ -15,39 +15,30 @@ public class AccountPage extends BasePage {
     }
 
     @FindBy(css = "[title='Написать письмо']")
-    @SuppressWarnings("unused")
     private WebElement writeMailButton;
 
     @FindBy(xpath = "//*[@class='llc__snippet']")
-    @SuppressWarnings("unused")
     private List<WebElement> mailBodiesList;
 
     @FindBy(css = ".letter__body [class*=cl] div")
-    @SuppressWarnings("unused")
     private WebElement mailBodyText;
 
     @FindBy(xpath = "//*[@class='ll-crpt']")
-    @SuppressWarnings("unused")
     private List<WebElement> mailDestinationAddresseesList;
 
     @FindBy(xpath = "//*[@class='letter-contact']")
-    @SuppressWarnings("unused")
     private WebElement mailDestinationAddress;
 
     @FindBy(xpath = "//*[@class='ll-sj__normal']")
-    @SuppressWarnings("unused")
     private List<WebElement> mailSubjectsList;
 
     @FindBy(css = ".thread__subject-line h2")
-    @SuppressWarnings("unused")
     private WebElement mailSubject;
 
     @FindBy(xpath = "//*[@data-title-shortcut='Del']")
-    @SuppressWarnings("unused")
     private WebElement deleteButton;
 
     @FindBy(id = "PH_logoutLink")
-    @SuppressWarnings("unused")
     private WebElement logoutLink;
 
     public void pressWriteMailButton() {
