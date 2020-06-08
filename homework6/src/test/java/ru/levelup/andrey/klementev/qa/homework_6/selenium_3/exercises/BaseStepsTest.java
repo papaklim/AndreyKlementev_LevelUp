@@ -2,16 +2,20 @@ package ru.levelup.andrey.klementev.qa.homework_6.selenium_3.exercises;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import io.qameta.allure.Step;
-import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import ru.levelup.andrey.klementev.qa.homework_6.selenium_3.listener.AllureTestListener;
 import ru.levelup.andrey.klementev.qa.homework_6.selenium_3.steps.ActionSteps;
 import ru.levelup.andrey.klementev.qa.homework_6.selenium_3.steps.AssertionSteps;
 
 import java.util.Date;
 
-
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
+@ExtendWith(AllureTestListener.class)
 public abstract class BaseStepsTest {
 
     protected static final String BASE_URL = "https://mail.ru/";
@@ -24,7 +28,7 @@ public abstract class BaseStepsTest {
     protected static final String MAIL_SUBJECT_WITH_TEST = "Test mail from selenium";
     public static final String MAIL_BODY_TEXT = "TEST: " + new Date().getTime();
 
-    protected WebDriver driver;
+    public static WebDriver driver;
     protected ActionSteps actionSteps;
     protected AssertionSteps assertionSteps;
 
@@ -41,8 +45,8 @@ public abstract class BaseStepsTest {
         assertionSteps = new AssertionSteps(driver);
     }
 
-    @AfterEach
-    public void tearDown() {
+    @AfterAll
+    static void tearDown() {
         driver.close();
     }
 }

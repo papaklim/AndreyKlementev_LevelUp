@@ -1,10 +1,11 @@
 package ru.levelup.andrey.klementev.qa.homework_6.selenium_3.exercises;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class ExerciseOneStepsTest extends BaseStepsTest {
 
-
+    @DisplayName("Scenario #1")
     @Test
     public void executeExerciseOne() {
         actionSteps.loginToPage(MAIL_LOGIN, MAIL_DOMAIN, MAIL_PASSWORD);
