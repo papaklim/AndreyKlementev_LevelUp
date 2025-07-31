@@ -21,7 +21,7 @@
 
         <selenium.java.version>3.141.59</selenium.java.version>
 
-        <webdrivermanager.version>3.8.1</webdrivermanager.version>
+        <webdrivermanager.version>6.1.0</webdrivermanager.version>
 
         <javafaker.version>1.0.2</javafaker.version>
 
